@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta type="description" content="This is a trivia guessing game, where the player is to answer a set of questions at a set time.">
+        <title>Tree Care Trivia</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://hetty-chin.github.io/Bootstrap-Portfolio/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+    </head>
+    <body>
+        <!--nav bar-->
+        <nav class="navbar sticky-top navbar-light bg-white border-bottom">
+            <div class="navbar-brand p-4">
+                <h2>Hetty Chin</h2>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="https://hetty-chin.github.io/Bootstrap-Portfolio/index.html">About</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="https:/hetty-chin.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hetty-chin.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--container-->
+        <div class="pt-5 pb-5 container-background">
+            <div class="container border bg-white p-4">
+                <div class="row align-items-center border-bottom p-4 ">
+                    <div class="col">
+                        <h2>How well do you know your tree care?
+                            <br>
+                            <small class="text-muted">Try to answer as many questions as you can. You have 60 seconds for each question.</small>
+                        </h2>
+                    </div>
+                </div>            
+                <!--game-->
+                <div class="p-4">
+                    <div class="start-game border-bottom text-center">
+                        <h2>Time Remaining:</h2>
+                        <div id="time-remaining"></div>
+                    </div>
+                    <div class="quiz mx-5 mt-4" id="quiz-1">
+                        <div class="quiz-body">
+                            <p><b>Question 1:</b> What layer of cells is responsible for outward trunk growth and increased girth of a tree?</p>
+                            <div class="answers">
+                                <button type="button" class="btn btn-light quiz-answer correct">a. cambium</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">b. pith</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">c. epidermis</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">d. cortex</button>
+                            </div>
+                            <div class="quiz-correct-answer">
+                                <p>The correct answer is <b>a. cambium</b>. The cambium is a thin sheath of dividing cells that produces the cells that will become the vascular system of the tree. The cambium produces xylem to the inside and phloem to the outside. The xylem is composed if dead and living cells. Old, nonfunctioning xylem constitutes the wood of the tree and contributes to the increase in diameter of the tree.</p>
+                                <img class="img-fluid" src="assets/images/cross-section-tree.jpg" alt="A cross section of a tree showing the vascular cambium layer.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz mx-5 mt-4" id="quiz-2">
+                        <div class="quiz-body">
+                            <p>Question 2: Which genus of trees usually does <strong><em>not</em></strong> have an opposite leaf arrangement?</p>
+                            <div class="answers">
+                                <button type="button" class="btn btn-light quiz-answer ">a. <i>Acer</i> (maples)</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">b. <i>Fraxinus</i> (ash)</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer correct">c. <i>Quercus</i> (oaks)</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">d. <i>Cornus</i> (dogwoods)</button>
+                            </div>
+                            <div class="quiz-correct-answer">
+                                <p>The correct answer is <b>c. <i>Quercus</i> (oaks)</b>. In temperate North America, Europe, and Asia, most of the trees with opposite leaf arrangements fall into four genera represented by the memory device &ldquo;MAD Horse,&rdquo; for <b>m</b>aple, <b>a</b>sh, <b>d</b>ogwood, and <b>horse</b>chestnut.</p>
+                                <img class="img-fluid" src="assets/images/leaf-arrangements-on-stem.jpg" alt="The leaf arrangements on a stem.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz mx-5 mt-4" id="quiz-3">
+                        <div class="quiz-body">
+                            <p>Question 3: Most of the fine, absorbing roots are typically found near the soil surface because...</p>
+                            <div class="answers">
+                                <button type="button" class="btn btn-light quiz-answer correct">a. roots grow where conditions are favorable.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">b. roots need UV light to drive respiration.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer">c. the pH of the soil is generally higher near the surface.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">d. phosphorus and potassium are more available.</button>
+                            </div>
+                            <div class="quiz-correct-answer">
+                                <p>The correct answer is <b>a. roots grow where conditions are favorable</b>. The A (surface) horizon and sometimes the O (organic) horizon contains most of the fine absorbing roots of trees and is very biologically active. The A horizon is normally rich in organic matter, which gives this horizon its characteristic dark color. </p>
+                                <img class="img-fluid" src="assets/images/soil-horizons.jpg" alt="A soil profile shows the different horizons &mdash; the horizontal layers of soil below the surface.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz mx-5 mt-4" id="quiz-4">
+                        <div class="quiz-body">
+                            <p>Question 4: When irrigating trees, ...</p>
+                            <div class="answers">
+                                <button type="button" class="btn btn-light quiz-answer ">a. keeping the soil moist at the root flare reduces girdling root formation.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">b. the most beneficial and efficient time to water is mid-afternoon at peak sunlight.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer">c. the foliage should be kept wet at night to reduce transpiration</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer  correct">d. infrequent, deep soakings are preferable to frequent, shallow waterings.</button>
+                            </div>
+                            <div class="quiz-correct-answer">
+                                <p>The correct answer is <b>d. infrequent, deep soakings are preferable to frequent, shallow waterings</b>. Newly transplanted trees require frequent watering to help establish the plant. However, after the plant has been established, frequent shallow waterings encourage surface rooting, which makes the tree vulnerable to drying out. Infrequent, deep soakings can encourage the development of a deeper root system and more drought-tolerant trees.</p>
+                                <img class="img-fluid" src="assets/images/treecaresketch-water-darker-notube.jpg" alt="Give the tree about 5 gallons of water once per week.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz mx-5 mt-4" id="quiz-5">
+                        <div class="quiz-body">
+                            <p>Question 5: To prune trees that flower on the previous year&rsquo;s growth and maximize flowering, you should prune...</p>
+                            <div class="answers">
+                                <button type="button" class="btn btn-light quiz-answer ">a. any time during the dormant season.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer correct">b. shortly after flowering.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">c. in the late summer after seed formation.</button>
+                                <br>
+                                <button type="button" class="btn btn-light quiz-answer ">d. in the fall, just after leaf drop.</button>
+                            </div>
+                            <div class="quiz-correct-answer">
+                                <p>The correct answer is <b>b. shortly after flowering</b>.  Flowering can be prevented or enhanced by pruning at the appropriate time of the year. Plants that bloom on last season&rsquo;s wood, such as many fruit trees, should be pruned just after bloom.</p>
+                                <img class="img-fluid" src="assets/images/prunus-×-blireana-trees.jpg" alt="Blirieana Flowering Plum trees.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-5">
+                        <p id="correct-prompt">Good Job! Your answer is correct!</p>
+                        <p id="incorrect-prompt">Sorry, that answer is incorrect.</p>
+                        <p id="missed-prompt">Sorry, your time is up.</p>
+                    </div>
+                    <div class="col-md-12 py-2 pl-0">
+                        <button type="button" class="btn mt-3 btn-outline-secondary" id="start">Let&rsquo;s start!</button>
+                    </div>
+                    <div id="game-over" class="py-2">
+                        <h2 class="py-2 border-bottom mb-3">You&rsquo;re done with the quiz!</h2>
+                        <div>
+                            <h3>Number of Correct Answers:</h3>
+                            <div id="correct-answers-counter"></div>
+                        </div>
+                        <div>
+                            <h3>Number of Incorrect Answers:</h3>
+                            <div id="incorrect-answers-counter"></div>
+                        </div>
+                        <div>
+                            <h3>Number of Missed Answers:</h3>
+                            <div id="missed-answers-counter"></div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-12 py-2 pl-0">
+                        <button type="button" class="btn mt-3 btn-outline-secondary" id="restart">Let&rsquo;s try again!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>

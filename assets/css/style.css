@@ -1,0 +1,37 @@
+.quiz-correct-answer,
+.btn-next, #quiz-1, #quiz-2, #quiz-3, #quiz-4, #quiz-5, #quiz-6, #quiz-7, #quiz-8, #quiz-9, #quiz-10, #correct-prompt, #incorrect-prompt, #missed-prompt, #game-over, #restart, .start-game {
+    display: none;
+}
+.green {
+    background-color: #b7d096; 
+}
+.green:hover {
+    background-color: #4CAF50;
+}
+
+#correct-prompt {
+    color: #4CAF50;
+}
+
+#incorrect-prompt {
+    color: #d9534f;
+}
+
+.red {
+    background-color: #f0b1a2;
+}
+
+.red:hover {
+    background-color:#d9534f;
+}
+
+#time-remaining, #correct-answers-counter, #incorrect-answers-counter, #missed-answers-counter {
+    font-size:50px;
+}
+
+.quiz-answer, .quiz-correct-answer {
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
